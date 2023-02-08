@@ -19,7 +19,6 @@ submitButton.addEventListener('click', ()=>{
         cardThanks.style.display = "flex";
         finalScore.innerHTML = rating;
     } else {
-        
         Swal.fire({
             title: 'Error!',
             text: 'Selecciona un rating!',

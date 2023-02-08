@@ -23,6 +23,7 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Overpass', sans-serif;
+    background-color: rgba(238,238,238,255);
 }
 
     h1 {
@@ -53,13 +54,17 @@ body {
         max-width: 400px;
         background-color:var(--Card);
         border-radius: 2rem;
-        
     }
 
         .icon {
+            display: flex;
             width:80%;
             margin: 0 auto;
             margin-top: 2rem;
+        }
+
+        .icon img {
+            vertical-align: middle;
         }
 
         .txt{
