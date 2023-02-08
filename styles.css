@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light-grey: hsl(217, 12%, 63%);
+    --Medium-grey: hsl(216, 12%, 54%);
+    --Darkblue: hsl(213, 19%, 18%);
+    --VDB: hsl(216, 12%, 8%);
+    --Orange: hsl(25, 97%, 53%);
+    --DG: rgba(37,44,54,255);
+    --Card: rgba(25,32,42,255);
+    --X: rgba(18,19,23,255);
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Overpass', sans-serif;
+}
+
+    h1 {
+        color: var(--White);
+        
+    }
+
+    p {
+        color: var(--Light-grey); 
+        font-size: 15px;
+        line-height: 18pt;
+    }
+
+.main_container {
+    display: flex;
+    width: 80%;
+    height:80%;
+    background-color: var(--VDB);
+    justify-content: center;
+    align-items: center;
+}
+
+    .card-rating {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100vw;
+        max-width: 400px;
+        background-color:var(--Card);
+        border-radius: 2rem;
+        
+    }
+
+        .icon {
+            width:80%;
+            margin: 0 auto;
+            margin-top: 2rem;
+        }
+
+        .txt{
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 1rem;
+        }
+
+        .star_rating {
+            display: flex;
+            width: 80%;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        padding-left: 0;
+        width: 90%;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+
+    button {
+        background-color: var(--DG);
+        border: none;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        color: var(--Medium-grey);
+        font-weight: 700;
+        font-size: 16px;
+        font-family: 'Overpass', sans-serif;
+    }
+
+    button:hover {
+        background-color: var(--Light-grey);
+        color: var(--White);
+    }
+
+    button:focus {
+        background-color: var(--Orange);
+        color: var(--White);
+    }
+
+    .sub_btn {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+
+    .submit {
+        background-color: var(--Orange);
+        border-radius: 10rem;
+        font-weight: 700;
+        width: 100%;
+        letter-spacing: 0.2rem; 
+        color: white;
+    }
+
+    .submit:hover {
+        color: var(--Orange);
+        background-color: var(--White);
+    }
+
+
+
+.card-thanks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;;
+    width: 100vw;
+    max-width: 400px;
+    background-color:var(--Card);
+    border-radius: 2rem;
+    display: none;
+}
+    .img-ctn{
+        display: flex;
+        width: 80%;
+        flex-direction: center;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+
+    .rating_score {
+        color: var(--Orange);
+        padding: 0.6rem 1rem;
+        text-align: center;
+        margin-top: 3rem;
+        background-color: var(--DG);
+        border-radius: 10rem;
+    }
+
+    .thank-txt {
+        width: 80%;
+        margin-top: 3¿1rem;
+        margin-bottom: 2rem; 
+        text-align: center;
+    }
+
+    @media (max-width: 376px) {
+        .main_container{
+            width: 100%;
+            height: 100%;
+        }
+
+        .card-rating , .card-thanks{
+            width:90%;
+        }
+    }

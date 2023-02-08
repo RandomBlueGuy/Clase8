@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Interactive rating component</title>
+</head>
+<body>
+    <div class="main_container">
+        <div class="card-rating">
+            <div class="icon">
+                <button><img src="Resources/icon-star.svg" alt=""></button>
+            </div>
+            <div class="txt">
+                <h1>How did we do?</h1>
+                <p> Please let us know how we did with your support 
+                    request. All feedback is appreciated to help us 
+                    improve our offering!
+                </p>
+            </div>
+            <div class="star-rating">
+                <ul>
+                    <li><button class="boton">1</button></li>
+                    <li><button class="boton">2</button></li>
+                    <li><button class="boton">3</button></li>
+                    <li><button class="boton">4</button></li>
+                    <li><button class="boton">5</button></li>
+                </ul>
+            </div>
+            <div class="sub_btn">
+            <button class="submit" id="btn-prime">SUBMIT</button>
+            </div>
+        </div>
+
+        <div class="card-thanks">
+            <div class="img-ctn">
+                <img src="Resources/illustration-thank-you.svg" alt="">
+            </div>
+            <div class="rating_score">You select <span id="f_score">#</span> out of 5</div>
+            <div class="thank-txt">
+                <h1>Thank you!</h1>
+                <p>
+                    We appreciate you taking the time to give a rating.
+                    If you ever need ore support, don't hesitate to
+                    get in touch!
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="index.js"></script>
+</body>
+</html>
